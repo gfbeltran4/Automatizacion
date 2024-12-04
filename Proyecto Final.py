@@ -134,21 +134,6 @@ def ejecutar_acciones(archivo_excel):
             take_screenshot(Nombre if Nombre else "N/A")
 
 
-        elif Accion == 'imagen2':
-            x, y = Elemento, ValorE
-            pyautogui.moveTo(x, y, duration=1)
-            pyautogui.click()   # Mover el mouse a (x, y) en 0.5 segundos
-            print("click en la coordenada.")
-            take_screenshot(Nombre if Nombre else "N/A")
-
-
-        elif Accion == 'imagen3':
-            x, y = Elemento, ValorE
-            pyautogui.moveTo(x, y, duration=1)
-            pyautogui.click()   # Mover el mouse a (x, y) en 0.5 segundos
-            print("click en la coordenada.")
-            take_screenshot(Nombre if Nombre else "N/A")     
-
         try:
               document.save(r'C:\Users\gelver.beltran\Documents\pruebas\prueba.docx')   
         except Exception as e:
